@@ -1,0 +1,23 @@
+{% extends "shared_support.html" %}
+
+{% block content %}
+    <h1 class="text-center">Raise a Support Ticket</h1>
+    <p class="lead text-center">Having issues? Create a ticket and our team will assist you promptly.</p>
+    
+    <!-- Placeholder form for ticket submission -->
+    <form>
+        <div class="form-group">
+            <label for="issueType">Issue Type:</label>
+            <select class="form-control" id="issueType">
+                <option>Order Issue</option>
+                <option>Payment Issue</option>
+                <!-- Add more issue types as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea class="form-control" id="description" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn">Submit Ticket</button>
+    </form>
+{% endblock %}
